@@ -12,7 +12,7 @@ CLick [here]() to view the demo.
 
 **"Understanding is deeper than knowledge"**
 
-Understanding is the most difficult for a person. Nowadays Every student needs self-learning. But self-learning is more effective when there is better understanding. Understanding will become easier while visualizing the concepts rather than reading. For this, we have developed a web app where students can learn various concepts with the help of 3D and AR. So Students can understand the concepts more easily. If the concepts are understood, then learning will become easier. Moreover, students will be more attracted to learning while learning through 3D concepts.
+Understanding is the most difficult for a person. Nowadays, Every student needs self-learning. But self-learning is more effective when there is better understanding. Understanding will become easier while visualizing the concepts rather than reading. For this, we have developed a web app where students can learn various concepts with the help of 3D and AR. So Students can understand the concepts more easily. If the concepts are understood, then learning will become easier. Moreover, students will be more attracted to learning while learning through 3D concepts.
 
 **Advantage:**
 
