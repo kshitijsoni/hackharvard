@@ -18,7 +18,7 @@ export default function Study() {
 
             <div className="flex flex-wrap flex-col-2 justify-around w-full px-16 py-8">
 
-                <Link to='/turbofan'>
+                <Link to='/poloxamer'>
                     <div className="m-8">
                         <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
                             <img className="pb-8 border-4 bg-white border-indigo-500 rounded-lg" alt="" src=
@@ -28,7 +28,7 @@ export default function Study() {
                     </div>
                 </Link>
 
-                <Link to='/combustionengine'>
+                <Link to='/atom'>
                     <div className="m-8">
                         <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
                             <img className="pb-8 border-4 bg-white border-indigo-500 rounded-lg" alt="" src=
@@ -38,7 +38,7 @@ export default function Study() {
                     </div>
                 </Link>
 
-                <Link to='/v8'>
+                <Link to='/volcano'>
                     <div className="m-8">
                         <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
                             <img className="pb-8 border-4 bg-white border-indigo-500 rounded-lg" alt="" src=
@@ -48,7 +48,7 @@ export default function Study() {
                     </div>
                 </Link>
 
-                <Link to='/v8'>
+                <Link to='/diamondmolecule'>
                     <div className="m-8">
                         <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
                             <img className="pb-8 border-4 bg-white border-indigo-500 rounded-lg" alt="" src=
@@ -58,7 +58,7 @@ export default function Study() {
                     </div>
                 </Link>
 
-                <Link to='/v8'>
+                <Link to='/dichlorohexane'>
                     <div className="m-8">
                         <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
                             <img className="pb-8 border-4 bg-white border-indigo-500 rounded-lg" alt="" src=

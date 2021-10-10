@@ -2,9 +2,8 @@ import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuAlt3Icon, XIcon } from '@heroicons/react/outline'
-import LogoutIcon from "../assets/logout.png"
 
-export default function Navbar({ handleLogout }) {
+export default function Navbar() {
 
   return (
     <div className="fixed z-50 w-full">
@@ -15,7 +14,7 @@ export default function Navbar({ handleLogout }) {
               <div className="flex items-center justify-between py-3 border-b-2 md:justify-start md:space-x-8">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                   <Link to='/' className="w-auto text-white no-underline flex cursor-pointer">
-                    <div className=" inline-flex text-5xl tracking-wider font-carattere">Learn3D</div>
+                    <div className=" inline-flex text-5xl tracking-wider font-carattere">Visual3D</div>
                     </Link>
                 </div>
                 <div className="-my-2 -mr-2 md:hidden">
@@ -30,10 +29,6 @@ export default function Navbar({ handleLogout }) {
                   <Link to='/' className="px-3 py-2 mx-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">Home</Link>
 
                   <Link to='/Study' className="px-3 py-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">Study</Link>
-
-                  <div className='pl-2 mt-1 cursor-pointer nav-links' onClick={handleLogout}>
-                    <img src={LogoutIcon} height="40" width="40" className="text-white " alt="logout" aria-hidden="true" />
-                  </div>
 
                 </Popover.Group>
 
@@ -60,7 +55,7 @@ export default function Navbar({ handleLogout }) {
                     <div className="flex items-center justify-between">
                       <div>
                         <div className="flex justify-start lg:w-0 lg:flex-1">
-                          <Link to='/' className="w-auto h-8 text-5xl text-white no-underline font-carattere">Learn3D</Link>
+                          <Link to='/' className="w-auto h-8 text-5xl text-white no-underline font-carattere">Visual3D</Link>
                         </div>
                       </div>
                       <div className="-mr-2">
@@ -86,10 +81,6 @@ export default function Navbar({ handleLogout }) {
 
                     <div className="grid justify-center">
                       <div className="inline-flex w-64 h-1 bg-indigo-500 rounded-full"></div>
-                    </div>
-
-                    <div className='grid cursor-pointer place-items-center' onClick={handleLogout}>
-                      <img src={LogoutIcon} height="40" width="40" className="text-white" alt="logout" aria-hidden="true" />
                     </div>
                   </div>
 
