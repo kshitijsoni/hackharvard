@@ -1,33 +1,106 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from "./pages/Home"
-import Study from "./pages/Study"
-import Poloxamer from './pages/Poloxamer'
-import Atom from "./pages/Atom"
-import Volcano from './pages/Volcano';
-import DiamondMolecule from './pages/DiamondMoleculeStructure';
-import Dichlorohexane from './pages/Dichlorohexane';
-import Footer from './components/Footer';
+import React, { useState, useEffect } from "react"
 import './App.css';
+import fire from "./firebase"
+import Main from "./main"
+import Login from "./pages/Login"
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [hasAccount, setHasAccount] = useState("");
 
-    return (
-        <Router>
-            <Navbar />
-            <Switch>
-                <Route path='/' exact component={Home} />
-                <Route path='/Study' exact component={Study} />
-                <Route path='/poloxamer' exact component={Poloxamer} />
-                <Route path='/atom' exact component={Atom} />
-                <Route path='/volcano' exact component={Volcano} />
-                <Route path='/diamondmolecule' exact component={DiamondMolecule} />
-                <Route path='/dichlorohexane' exact component={Dichlorohexane} />
-            </Switch>
-            <Footer />
-        </Router>
-    )
+  const clearInputs = () => {
+    setEmail('');
+    setPassword("");
+  }
+
+  const clearErrorss = () => {
+    setEmailError('');
+    setPasswordError("");
+  }
+
+  const handleLogin = () => {
+    clearErrorss();
+    fire
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .catch((err) => {
+        switch (RegExp.code) {
+          case "auth/invalid-email":
+          case "auth/user-disabled":
+          case "auth/user-not-found":
+            setEmailError(err.message);
+            break;
+          case "auth/wrong-password":
+            setPasswordError(err.message);
+            break;
+        }
+      });
+  };
+
+  const handleSignup = () => {
+    clearErrorss();
+    fire
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .catch((err) => {
+        switch (RegExp.code) {
+          case "auth/email-alrady-in-use":
+          case "auth/invalid-email":
+            setEmailError(err.message);
+            break;
+          case "auth/weak-password":
+            setPasswordError(err.message);
+            break;
+        }
+      });
+  };
+
+  const handleLogout = () => {
+    fire.auth().signOut();
+  }
+
+  const authListner = () => {
+    fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        clearInputs();
+        setUser(user);
+      } else {
+        setUser("");
+      }
+    })
+  }
+
+  useEffect(() => {
+    authListner();
+  }, []);
+
+  return (
+    <div className="App">
+      <div className="AppImg">
+        {/* <div className="stars bg-fixed"></div> */}
+        {user ? (
+          <Main handleLogout={handleLogout} />
+        ) : (
+          <Login
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            handleLogin={handleLogin}
+            handleSignup={handleSignup}
+            hasAccount={hasAccount}
+            setHasAccount={setHasAccount}
+            emailError={emailError}
+            passwordError={passwordError}
+          />
+        )}
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;

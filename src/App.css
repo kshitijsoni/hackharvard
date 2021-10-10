@@ -16,3 +16,58 @@
   background: rgba(126, 38, 185, 0.959);
   border-radius: 12px;
 }
+
+
+.login-signup {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.loginContainer {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.loginContainer label {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  margin-top: -30px;
+  background: rgba(255, 255, 255, 0.1);
+  /* color: #fff; */
+  letter-spacing: 1px;
+  border-radius: 10px;
+  /* border: 2px solid rgb(17, 17, 19); */
+  background: transparent;
+  border-bottom: 2px solid #9b9b9b;
+}
+
+
+.loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+}
+
+.login_button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #603bbb;
+  cursor: pointer;
+  border-radius: 15px;
+}

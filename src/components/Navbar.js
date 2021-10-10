@@ -2,8 +2,9 @@ import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuAlt3Icon, XIcon } from '@heroicons/react/outline'
+import LogoutIcon from "../assets/logout.png"
 
-export default function Navbar() {
+export default function Navbar({ handleLogout }) {
 
   return (
     <div className="fixed z-50 w-full">
@@ -15,7 +16,7 @@ export default function Navbar() {
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                   <Link to='/' className="w-auto text-white no-underline flex cursor-pointer">
                     <div className=" inline-flex text-5xl tracking-wider font-carattere">Visual3D</div>
-                    </Link>
+                  </Link>
                 </div>
                 <div className="-my-2 -mr-2 md:hidden">
                   <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-900 rounded-md hover:text-gray-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -29,6 +30,10 @@ export default function Navbar() {
                   <Link to='/' className="px-3 py-2 mx-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">Home</Link>
 
                   <Link to='/Study' className="px-3 py-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">Study</Link>
+
+                  <div className='pl-2 mt-1 cursor-pointer nav-links' onClick={handleLogout}>
+                    <img src={LogoutIcon} height="40" width="40" className="text-white " alt="logout" aria-hidden="true" />
+                  </div>
 
                 </Popover.Group>
 
@@ -76,6 +81,10 @@ export default function Navbar() {
                       <Link to='/' className="px-3 py-2 text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">Home</Link>
 
                       <Link to='/Study' className="px-3 py-2 text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">Study</Link>
+
+                      <div className='pl-2 mt-1 cursor-pointer nav-links' onClick={handleLogout}>
+                        <img src={LogoutIcon} height="40" width="40" className="text-white " alt="logout" aria-hidden="true" />
+                      </div>
 
                     </div>
 
