@@ -12,7 +12,7 @@ module.exports = {
         page404A: "#1C1023",
         page404B: "#B53FA6",
         page404C: "#351945",
-        exploreCards: "#255A81",
+        StudyCards: "#255A81",
         bgImg: "#000104",
       },
       zIndex: {

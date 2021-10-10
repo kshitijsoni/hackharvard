@@ -1,0 +1,439 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 10523,
+      "max": [
+        398.082275390625,
+        318.95962524414062,
+        372.8304443359375
+      ],
+      "min": [
+        -508.65164184570312,
+        -205.83723449707031,
+        -442.71844482421875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 126276,
+      "componentType": 5126,
+      "count": 10523,
+      "max": [
+        0.99999880790710449,
+        0.99999254941940308,
+        0.9999992847442627
+      ],
+      "min": [
+        -0.99998915195465088,
+        -0.9999992847442627,
+        -0.99999481439590454
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 10523,
+      "max": [
+        1,
+        0.99957692623138428,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -0.99949640035629272,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 10523,
+      "max": [
+        0.9948006272315979,
+        0.98362052440643311
+      ],
+      "min": [
+        -0.29617643356323242,
+        0.02637566439807415
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 58704,
+      "max": [
+        10522
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 252552,
+      "componentType": 5126,
+      "count": 2589,
+      "max": [
+        264.329345703125,
+        134.77630615234375,
+        744.9327392578125
+      ],
+      "min": [
+        -511.677978515625,
+        -503.257568359375,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 283620,
+      "componentType": 5126,
+      "count": 2589,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 84184,
+      "componentType": 5126,
+      "count": 2589,
+      "max": [
+        1.0040000677108765,
+        0.84973090887069702
+      ],
+      "min": [
+        -0.002472221851348877,
+        0.15043412148952484
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 234816,
+      "componentType": 5125,
+      "count": 14418,
+      "max": [
+        2588
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "shooogp (https://sketchfab.com/shooogp)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/volcano--f53dad6cb99844e98753a41035373560",
+      "title": "Volcano - البركان"
+    },
+    "generator": "Sketchfab-9.11.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 292488,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 104896,
+      "byteOffset": 292488,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 314688,
+      "byteOffset": 397384,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 168368,
+      "byteOffset": 712072,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 880440,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Material_38_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Material_38_normal.png"
+    },
+    {
+      "uri": "textures/Material_39_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Material_39_metallicRoughness.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Material_38",
+      "normalTexture": {
+        "index": 1,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Material_39",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 3,
+          "texCoord": 0
+        },
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "volcan_final_Material #38_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "lava_1_Material #39_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7
+          },
+          "indices": 8,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "efe22bdc05d94bf69679086cca3d6a90.fbx"
+    },
+    {
+      "children": [
+        4,
+        6
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1.3134770393371582,
+        0,
+        0,
+        0,
+        0,
+        1.1266955137252797,
+        4.9249427082784686e-08,
+        0,
+        0,
+        -5.7413907205385387e-08,
+        1.3134770393371569,
+        0,
+        0.678985595703125,
+        -38.445327758789062,
+        -9.5197543714675703e-07,
+        1
+      ],
+      "name": "volcan_final"
+    },
+    {
+      "mesh": 0,
+      "name": "volcan_final_Material #38_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        0.46514559576101111,
+        1.1102230246251565e-16,
+        -0.88523419203289588,
+        0,
+        -0.88523419203289588,
+        0,
+        -0.46514559576101111,
+        0,
+        -1.1102230246251565e-16,
+        1,
+        1.1102230246251565e-16,
+        0,
+        -70.26580810546875,
+        -433.3360595703125,
+        1.7761030197143555,
+        1
+      ],
+      "name": "lava_1"
+    },
+    {
+      "mesh": 1,
+      "name": "lava_1_Material #39_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ]
+}
+

@@ -2,7 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from "./pages/Home"
-import Explore from "./pages/Explore"
+import Study from "./pages/Study"
+import Footer from './components/Footer';
 
 function Main() {
 
@@ -11,8 +12,9 @@ function Main() {
             <Navbar />
             <Switch>
                 <Route path='/' exact component={Home} />
-                <Route path='/explore' exact component={Explore} />
+                <Route path='/Study' exact component={Study} />
             </Switch>
+            <Footer />
         </Router>
     )
 }

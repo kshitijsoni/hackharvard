@@ -1,0 +1,11 @@
+Model Information:
+* title:	Structures of 2,3-dichlorohexane
+* source:	https://sketchfab.com/3d-models/structures-of-23-dichlorohexane-141349f633944f79a2794cfae0ef9ec9
+* author:	Michael Aristov (https://sketchfab.com/Michael.Aristov)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Structures of 2,3-dichlorohexane" (https://sketchfab.com/3d-models/structures-of-23-dichlorohexane-141349f633944f79a2794cfae0ef9ec9) by Michael Aristov (https://sketchfab.com/Michael.Aristov) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
